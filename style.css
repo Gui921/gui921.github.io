@@ -1,0 +1,97 @@
+body {
+    background-color: #15181a;
+    color: #fff;
+    font-family: "Space Mono",monospace;
+}
+
+.table {
+    display: table;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    overflow: hidden;
+    /* display: inline; */
+}
+h2 {
+  text-decoration: underline;
+}
+#menu {
+    float: right;
+}
+li {
+    float: left;
+  }
+
+li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+img {
+    width: 25%;
+}
+
+.topnav {
+    align-self: center;
+    background-color: #15181a;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:solid;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #777777;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #003824;
+    color: white;
+  }
+
+.download a {
+  color:aliceblue;
+  text-decoration: none;
+}
+
+.download a:hover {
+  background-color: #777777;
+  color: black;
+}
+.in {
+  position: relative;
+}
+.in img {
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 3%;
+}
+
+.git {
+  position: relative;
+}
+.git img {
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 3.5%;
+  width: 3%;
+}
+
