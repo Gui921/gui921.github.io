@@ -18,6 +18,9 @@ ul {
 h2 {
   text-decoration: underline;
 }
+.main p {
+  float: left;
+}
 #menu {
     float: right;
 }
@@ -30,9 +33,14 @@ li a{
     padding: 10px;
     color: #fff;
 }
-
-img {
-    width: 25%;
+.main {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr;
+}
+.main img {
+    width: 50%;
+    float: left;
 }
 
 .topnav {
