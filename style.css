@@ -1,105 +1,38 @@
 body {
-    background-color: #15181a;
-    color: #fff;
-    font-family: "Space Mono",monospace;
-}
-
-.table {
-    display: table;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-right: 5px;
-    overflow: hidden;
-    /* display: inline; */
-}
-h2 {
-  text-decoration: underline;
-}
-.main p {
-  float: left;
-}
-#menu {
-    float: right;
-}
-li {
-    float: left;
-  }
-
-li a{
-    text-decoration: none;
-    padding: 10px;
-    color: #fff;
-}
-.main {
-  display: grid;
-  align-items: center; 
-  grid-template-columns: 1fr 1fr;
-}
-.main img {
-    width: 50%;
-    float: left;
-}
-
-.topnav {
-    align-self: center;
-    background-color: #15181a;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  /* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration:solid;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #777777;
+    background-color: beige;
     color: black;
-  }
-  
-  /* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #003824;
-    color: white;
-  }
-
-.download a {
-  color:aliceblue;
-  text-decoration: none;
+    font-family:'Courier New', Courier, monospace
+}
+.header {
+    display: flex;
+    justify-content: space-between; /* Ensures h1 is on the left and images are on the right */
+    align-items: center; /* Aligns elements vertically */
 }
 
-.download a:hover {
-  background-color: #777777;
-  color: black;
-}
-.in {
-  position: relative;
-}
-.in img {
-  border-radius: 50%;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 3%;
+.images {
+    display: flex;
+    gap: 10px; /* Space between images */
 }
 
-.git {
-  position: relative;
-}
-.git img {
-  border-radius: 50%;
-  position: absolute;
-  top: 0px;
-  right: 3.5%;
-  width: 3%;
+.images img {
+    width: 40px;  /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    object-fit: contain;
 }
 
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 1%;
+}
+
+.note {
+    font-size: smaller;
+}
