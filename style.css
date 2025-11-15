@@ -1,38 +1,108 @@
-body {
-    background-color: beige;
-    color: black;
-    font-family:'Courier New', Courier, monospace
-}
-.header {
-    display: flex;
-    justify-content: space-between; /* Ensures h1 is on the left and images are on the right */
-    align-items: center; /* Aligns elements vertically */
+/* ===== Global Colors ===== */
+:root {
+    --bg: #FAF7F2;
+    --text: #1C1C1C;
+    --muted: #6F6F6F;
+    --accent: #9A6AFF;
+    --accent-hover: #7A52D1;
+    --border: #E5E2DC;
 }
 
+/* ===== Base Styles ===== */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 2.5rem 1.5rem;
+    max-width: 750px;
+    line-height: 1.65;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Header ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* ===== Social Icons ===== */
 .images {
     display: flex;
-    gap: 10px; /* Space between images */
+    gap: 12px;
 }
 
 .images img {
-    width: 40px;  /* Set the desired width */
-    height: 40px; /* Set the desired height */
-    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    opacity: 0.85;
+    transition: 0.2s ease-in-out;
 }
 
+.images img:hover {
+    opacity: 1;
+    transform: scale(1.07);
+    filter: drop-shadow(0 0 4px var(--accent));
+}
 
+/* ===== Typography ===== */
+h3, h4 {
+    margin-top: 2.3rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+p {
+    margin: 0.45rem 0;
+}
+
+/* ===== Links ===== */
 a {
+    color: var(--accent);
     text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
 }
 
-ul{
-    list-style-type: none;
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* ===== Lists ===== */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.3rem;
 }
 
 li {
-    padding-bottom: 1%;
+    margin-bottom: 0.6rem;
 }
 
 .note {
-    font-size: smaller;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* ===== Subtle Divider Under Section Titles ===== */
+h3::after {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 2px;
+    background: var(--accent);
+    margin-top: 0.45rem;
+    border-radius: 3px;
+    opacity: 0.8;
 }
